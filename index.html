@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Quote Machine</title>
+    <link rel="stylesheet" href="lib/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="row">
+        <div class="col-md-6 offset-md-4 m-5 ">
+          <div class="card">
+              <img src="" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">{{name}}</h5>
+                <p class="card-text">
+                  {{currentQuote}}
+                
+                </p>
+                <button v-on:click="newQuote" name="button" class="btn btn-primary" >New Quote</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lib/jquery/jquery-3.5.1.js"></script>
+    <script src="lib/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <script src="lib/vue/vue.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
